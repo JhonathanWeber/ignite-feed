@@ -1,12 +1,15 @@
-import { Header } from "./components/header";
+import style from "./App.module.css";
+import { Header } from "./components/header/header";
+import { Sidebar } from "./components/sidebar/sidebar";
 
 export default function App() {
   return (
     <>
       <Header />
-      <main>
-        <h1>Main</h1>
+      <main className={style.wrapper}>
+        <Sidebar />
         <section>
+          <h1>Main</h1>
           <article></article>
         </section>
       </main>
